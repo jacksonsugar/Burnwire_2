@@ -32,11 +32,17 @@ Steps for deployment
        sudo avrdude -c usbtiny -p atmega328p -F -U lfuse:w:0xe2:m -U hfuse:w:0xd9:m -U efuse:w:0xff:m
  
 
-9) Open Burnwire_2.ino and set times for the burn cycle and strobe delay found in the first few lines of code seperated by the "/". Do not edit code outside the lines provided.
+7) Open Burnwire_2.ino and set times for the burn cycle and strobe delay found in the first few lines of code seperated by the "////////////". Do not edit code outside the lines provided.
 
-10) Upload Burnwire_2.ino to the burn wire and unplug from programming device
+8) Upload Burnwire_2.ino to the burnwire
+
+      File --> Upload Using Programmer
       
-      --> Note: Elapsed time programmed begins once shorting plug is installed. 
+9) Wait for flash to verify upload
+
+10) Unplug Programmer
+
+--> Note: Elapsed time programmed begins once shorting plug is installed. 
 
 11) Install shorting plug and wait for flash
 
