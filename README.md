@@ -1,6 +1,16 @@
 # Burnwire_2
 Dependencies and code for a compact self-contained burn wire based on the ATmega328p & DS3231 Real Time Clock
 
+Install avrdude:
+
+apt:
+sudo apt-get install avrdude
+
+homebrew:
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+
+brew install avrdude
+
 Steps for deployment
 
 1) Download and install Arduino IDE from the official website:  https://www.arduino.cc/en/Main/Software
@@ -15,9 +25,9 @@ Steps for deployment
 
       Sketch -> Include Library -> Add .ZIP Library..
             
-            Low-Power-master.zip
+            LowPower.zip
             
-            RTClib-master.zip
+            RTClib.zip
 
 5) Set laptop/desktop clock to UTC should your application require it
 
