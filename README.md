@@ -3,15 +3,19 @@ Dependencies and code for a compact self-contained burn wire based on the ATmega
 
 Install avrdude:
 
-apt:
+apt (Debian):
 
     sudo apt-get install avrdude
 
-homebrew:
+homebrew (OSX):
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
 
     brew install avrdude
+
+Windows:
+
+    https://www.ladyada.net/learn/avr/setup-win.html
 
 Steps for deployment
 
